@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/index.css" rel="stylesheet" media="all"/>
+    <link href="css/tui.css" rel="stylesheet" media="all"/>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1039558_uc63zbzyhg.css">
+    <link src="http//at.alicdn.com/t/font_1039558_85f9emis0hx.css">
+</head>
+<body>
+<div class="my-head">
+    <div class="my-header">
+        <div class="title">
+            <a href="#">
+                <input  type="file" name="avatar" id="avatar" style="position: absolute;opacity: 0;z-index: 1;top: 40%">
+                    <img src="image/我的.png" id="preview" src="" alt="" style="width:50px;">
+            </a>
+        </div>
+
+        <a href="#"style="text-decoration: none;color: #cecece;font-size: 15px"> <span class="com">点击登录,体验更多</span></a>
+    </div>
+</div>
+<div class="main">
+    <div class="c_list">
+        <ul>
+                <a href="#">
+                    <li>
+                        <i class="iconfont icon-B-zhexuezongjiao"style=" font-size: 24px;color: #927947;margin-left: 5px"></i>
+                        <h4 class="f">个人资料</h4>
+                        <img src="image/return.png" style="float: right;margin-top: 14px">
+                    </li>
+                </a>
+            <a href="#">
+                <li>
+                    <i class="iconfont icon-B-zhexuezongjiao"style=" font-size: 24px;color: #927947;margin-left: 5px"></i>
+                    <h4 class="f">个人资料</h4>
+                    <img src="image/return.png" style="float: right;margin-top: 14px">
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <i class="iconfont icon-B-zhexuezongjiao"style=" font-size: 24px;color: #927947;margin-left: 5px"></i>
+                    <h4 class="f">个人资料</h4>
+                    <img src="image/return.png" style="float: right;margin-top: 14px">
+                </li>
+            </a>
+        </ul>
+    </div>
+</div>
+
+<div class="foot">
+    <ul class="footer">
+        <a href="#">
+            <li>
+                <div class="list_f">
+                    <img src="image/me.png"style="width: 32px;height: 32px">
+                    <h4 class="foot_title">首页</h4>
+                </div>
+            </li>
+        </a>
+        <a href="#">
+            <li>
+                <div class="list_f">
+                    <img src="image/me.png"style="width: 32px;height: 32px">
+                    <h4 class="foot_title">共享</h4>
+                </div>
+            </li>
+        </a>
+        <a href="#">
+            <li>
+                <div class="list_f">
+                    <img src="image/me.png"style="width: 32px;height: 32px">
+                    <h4 class="foot_title">书籍</h4>
+                </div>
+            </li>
+        </a>
+        <a href="#">
+            <li>
+                <div class="list_f">
+                    <img src="image/me.png"style="width: 32px;height: 32px">
+                    <h4 class="foot_title">我的</h4>
+                </div>
+            </li>
+        </a>
+    </ul>
+</div>
+<script>
+    var previewImage = document.querySelector("#preview")
+    var oAvatar = document.querySelector("#avatar")
+    oAvatar.onchange = function (e){
+        previewImage.src = window.URL.createObjectURL((e.srcElement.files[0]))
+    }
+</script>
+</body>
+</html>
